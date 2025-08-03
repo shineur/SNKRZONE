@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Produit - T-shirt Logo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #f8fafc;
+      font-family: 'Bebas Neue', cursive;
+      padding: 32px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 16px;
+    }
+    select, button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      font-size: 1rem;
+      border-radius: 10px;
+      border: none;
+    }
+    select {
+      background-color: #1f2937;
+      color: white;
+    }
+    button {
+      background-color: #f43f5e;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #be123c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="boutique_pro_clickable_clean.html" style="color:#f43f5e; text-decoration:none;">← Retour à la boutique</a>
+    <img src="https://via.placeholder.com/600x400?text=T-shirt+Logo" alt="T-shirt Logo" />
+    <h1>T-shirt Logo</h1>
+    <p>Un t-shirt stylé avec logo imprimé. Parfait pour un look décontracté ou streetwear.</p>
+    <label for="color">Couleur :</label>
+    <select id="color">
+      <option>Noir</option>
+      <option>Blanc</option>
+      <option>Rouge</option>
+    </select>
+
+    <label for="size">Taille :</label>
+    <select id="size">
+      <option>S</option>
+      <option>M</option>
+      <option>L</option>
+      <option>XL</option>
+    </select>
+
+    <button onclick="window.location.href='Page panier.html'">Ajouter au panier</button>
+  </div>
+</body>
+</html>

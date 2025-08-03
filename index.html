@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Boutique SnkrzOne</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #f43f5e;
+      --primary-hover: #be123c;
+      --bg: #0a0a0a;
+      --text: #f1f5f9;
+      --card-bg: #111827;
+      --border: #1f2937;
+      --radius: 10px;
+      --font: 'Bebas Neue', cursive;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 32px 0;
+      min-height: 100vh;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      text-align: center;
+      margin-bottom: 24px;
+      animation: bounceTitle 1.6s ease infinite;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 24px; padding: 0 16px;
+    }
+
+    .product-card {
+  text-decoration: none; color: inherit;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 0.8s ease forwards;
+      opacity: 0;
+    }
+
+    .product-card img {
+      width: 100%;
+      max-height: 180px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      margin-bottom: 10px;
+    }
+
+    .product-title {
+      font-size: 18px;
+      margin: 8px 0 4px;
+      color: var(--text);
+    }
+
+    .product-price {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .buy-btn {
+      background-color: var(--primary);
+      border: none;
+      padding: 10px;
+      color: white; background: none; border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: bold;
+      animation: pulseButton 2s infinite ease-in-out;
+    }
+
+    .buy-btn:hover {
+      background-color: var(--primary-hover);
+    }
+
+    @keyframes bounceTitle {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    @keyframes pulseButton {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.04); }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto 40px; padding: 0 20px;"><h2 style="font-size: 2rem; border-bottom: 3px solid #b91c1c; padding-bottom: 4px;">SNKRZONE</h2>
+    
+    <button onclick="window.location.href='Page panier.html'" style="border: none; color: white; background: none; border: none; padding: 10px 12px; font-size: 28px; border-radius: var(--radius); cursor: pointer; font-weight: bold;">
+      🛒
+    </button></a>
+  </header>
+  
+  <section class="product-grid" style="max-width: 1200px; margin: 0 auto;">
+
+    <!-- Exemple de produit à dupliquer -->
+    <a href="#" class="product-card" style="text-decoration: none;">
+      <img src="https://via.placeholder.com/200x180.png?text=SNKRZ1" alt="Produit 1"/>
+      <div class="product-title">Air Max Black</div>
+      <div class="product-price">129.99 €</div>
+      </a>
+    </div>
+
+    <a href="#" class="product-card" style="text-decoration: none;">
+      <img src="https://via.placeholder.com/200x180.png?text=SNKRZ2" alt="Produit 2"/>
+      <div class="product-title">Jordan Retro</div>
+      <div class="product-price">149.99 €</div>
+      </a>
+    </div>
+
+    <a href="#" class="product-card" style="text-decoration: none;">
+      <img src="https://via.placeholder.com/200x180.png?text=SNKRZ3" alt="Produit 3"/>
+      <div class="product-title">Yeezy Boost</div>
+      <div class="product-price">219.99 €</div>
+      </a>
+    </div>
+
+    <a href="#" class="product-card" style="text-decoration: none;">
+      <img src="https://via.placeholder.com/200x180.png?text=SNKRZ4" alt="Produit 4"/>
+      <div class="product-title">Puma RS-X</div>
+      <div class="product-price">109.99 €</div>
+      </a>
+    </div>
+
+  </section>
+</body>
+</html>
